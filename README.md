@@ -44,7 +44,7 @@ npm install
 Para iniciar o servidor de desenvolvimento e rodar a aplicação, use o comando:
 
 ```
-npm start
+npm run dev
 ```
 
 ### 5. Teste a aplicação
