@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edit-investment-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/investment.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.editInvestment-title {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #fafafa;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.edit-investment-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-investment-form label {
+  font-weight: bold;
+  color: #6e6e6e;
+}
+
+.edit-investment-form input,
+.edit-investment-form select {
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(173, 173, 173);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+.edit-investment-form button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-investment-form button:hover {
+  background-color: #45a049;
+}
+
+.link-back {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.link-back:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

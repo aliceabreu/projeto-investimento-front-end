@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f2f5f0;
+}
+
+.listInvestment-title {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.add-investment-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.investment-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.investment-header,
+.investment-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.investment-header {
+  font-weight: bold;
+  color: #f2f5f0;
+  background-color: #a09f9f;
+  margin-bottom: 10px;
+}
+
+.investment-item {
+  text-align: center;
+}
+
+.investment-row {
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.investment-row:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.investment-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.add-button {
+  width: 100%;
+}
+
+button.edit-button {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+button.delete-button {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: 2px solid #920202;
+  color: #920202;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #920202;
+  border: 2px solid #920202;
+  color: white;
+}
+
+.edit-button {
+  background-color: transparent;
+  border: 2px solid #024092;
+  color: #024092;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #024092;
+  border: 2px solid #024092;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .listInvestment-title {
+    font-size: 2rem;
+  }
+
+  .investment-header {
+    display: none;
+  }
+
+  .investment-row {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .investment-item {
+    text-align: left;
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+
+  .investment-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .investment-actions button {
+    flex: 1;
+    width: 200px;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  button {
+    width: 48%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button.edit-button {
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  button.delete-button {
+    max-width: 150px;
+    max-height: 50px;
+  }
+}
