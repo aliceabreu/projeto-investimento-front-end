@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add-investment-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/financas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.addInvestment-title {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #fafafa;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.add-investment-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-investment-form label {
+  font-weight: bold;
+  color: #6e6e6e;
+}
+
+.add-investment-form input,
+.add-investment-form select {
+  width: auto;
+  padding: 10px;
+  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(173, 173, 173);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.add-investment-form button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-investment-form button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+}
