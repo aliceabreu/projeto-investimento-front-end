@@ -9,10 +9,10 @@ function App() {
   return (
     <InvestmentProvider>
       <Router>
-      <Header /> {}
+        <Header /> {}
         <Routes>
-          <Route path="/" element={<ListInvestments />} />
           <Route path="/add" element={<AddInvestment />} />
+          <Route path="/" element={<ListInvestments />} />
           <Route path="/edit" element={<EditInvestment />} />
         </Routes>
       </Router>
